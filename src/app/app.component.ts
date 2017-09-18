@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Ninja Switchboard';
+  switches=[true, true, true, true, true, true, true, true, true, true];
+  setSwitch(idx) {
+    this.switches[idx] = !this.switches[idx];
+  }
 }
